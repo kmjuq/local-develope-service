@@ -5,7 +5,7 @@ services:
     image: mariadb
     restart: always
     environment:
-      MARIADB_ROOT_PASSWORD: example
+      MARIADB_ROOT_PASSWORD: 123456
 
   adminer:
     image: adminer
