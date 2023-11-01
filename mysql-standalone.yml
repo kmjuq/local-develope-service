@@ -1,0 +1,17 @@
+# https://hub.docker.com/_/mysql
+version: "3.1"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 50600:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 50690:8080
