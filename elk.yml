@@ -1,0 +1,11 @@
+# https://elk-docker.readthedocs.io/#running-with-docker-compose
+# https://github.com/spujadas/elk-docker
+version: "3.8"
+
+services:
+  elk:
+    image: sebp/elk
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"
